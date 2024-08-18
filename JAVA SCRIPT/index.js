@@ -9,6 +9,7 @@ function updateTime() {
     "h:mm:ss [<small>]A[</small>]"
   );
   }
+
   let parisCity = document.querySelector("#paris");
   if (parisCity) {
     let parisDate = parisCity.querySelector(".date");
@@ -19,6 +20,7 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
   let sydneyCity = document.querySelector("#sydney");
   if (sydneyCity) {
     let sydneyDate = sydneyCity.querySelector(".date");
@@ -29,6 +31,7 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+  
    let canadaCity = document.querySelector("#canada");
    if (canadaCity) {
      let canadaDate = canadaCity.querySelector(".date");
@@ -46,6 +49,9 @@ setInterval(updateTime, 1000);
 
 function updateCity(event) {
   let cityTimeZone = event.target.value;
+  if(cityTimeZone === "current"){
+    cityTimeZone = moment.tz.guess();
+  }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityTime = moment().tz(cityTimeZone);
   citiesElement = document.querySelector("#cities");
