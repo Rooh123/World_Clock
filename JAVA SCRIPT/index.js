@@ -31,7 +31,7 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
-  
+
    let canadaCity = document.querySelector("#canada");
    if (canadaCity) {
      let canadaDate = canadaCity.querySelector(".date");
@@ -41,6 +41,7 @@ function updateTime() {
      canadaTime.innerHTML = canadaTimeDetails.format(
        "h:mm:ss [<small>]A[</small>]"
      );
+    
    }
   
 }
@@ -70,7 +71,7 @@ function updateCity(event) {
           <div class="date"></div>
         </div>
         <div class="time"></div>
-    </div>`;
+    </div> <a href="/index.html">/back to main menu</a>`;
 }
 
 let citiesSelect = document.querySelector("#city");
