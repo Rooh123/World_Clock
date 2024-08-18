@@ -24,10 +24,9 @@ select {
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/787/original/be903306-e87d-4860-8b3b-d1bff14e7c22.jpeg?1723942047");
-  background-size: 50% 100%;
-  background-size: right;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/139/838/original/download_%282%29.jpeg?1723974156");
   background-repeat: no-repeat;
+  background-position:center;
   padding: 30px;
   box-shadow: rgba(66, 66, 79, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
@@ -41,6 +40,14 @@ select {
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
+  transition: all 200ms ease;
+}
+
+.city:hover{
+  transition: all 200ms ease;
+  opacity: 0.9;
+  cursor: pointer;
+  background: #c0a671;
 }
 .city:last-child {
   border: none;
@@ -68,4 +75,5 @@ strong {
 }
 a {
   text-decoration: none;
+  color: #c0a671;
 }

@@ -71,7 +71,7 @@ function updateCity(event) {
           <div class="date"></div>
         </div>
         <div class="time"></div>
-    </div> <a href="/index.html">/back to main menu</a>`;
+    </div> <a href="/index.html"> main menu</a>`;
 }
 
 let citiesSelect = document.querySelector("#city");
