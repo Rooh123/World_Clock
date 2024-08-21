@@ -41,9 +41,8 @@ function updateTime() {
      canadaTime.innerHTML = canadaTimeDetails.format(
        "h:mm:ss [<small>]A[</small>]"
      );
-    
-   }
   
+   }  
 }
 updateTime();
 setInterval(updateTime, 1000);
